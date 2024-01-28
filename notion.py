@@ -1,11 +1,12 @@
 import requests
 
+import secrets
 from drive import Drive
 
 
 class Notion:
     def __init__(self):
-        auth_token = 'secret_9nwKHT5lqKWALy0eWr5WwQnjSUkDIluHnqYWEr4fqqo'
+        auth_token = secrets.auth_token
         self.headers = {
             "Authorization": f"Bearer {auth_token}",
             "Content-Type": "application/json",
